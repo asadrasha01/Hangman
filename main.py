@@ -1,4 +1,8 @@
-word = 'Football'
+import  random
+
+with open('words.txt', 'r') as f:
+    words = f.readlines()
+word = random.choice(words)[:-1]
 game_life = 8
 guesses = []
 done = False
